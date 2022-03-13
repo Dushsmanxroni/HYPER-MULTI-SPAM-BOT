@@ -167,10 +167,10 @@ async def start_yukki():
             print("Booting Up The Client 2")
             await ydk.start()
             await ydk(functions.channels.JoinChannelRequest(channel=""))
+            await ydk(functions.channels.JoinChannelRequest(channel="@Dushmmanxronin"))
+            await ydk(functions.channels.JoinChannelRequest(channel=@bio_of_ronin"))
             await ydk(functions.channels.JoinChannelRequest(channel="@ABOUT_HYPER"))
-            await ydk(functions.channels.JoinChannelRequest(channel="@ABOUT_HYPER"))
-            await ydk(functions.channels.JoinChannelRequest(channel="@ABOUT_HYPER"))
-            await ydk(functions.channels.JoinChannelRequest(channel="@ABOUT_HYPER"))
+            await ydk(functions.channels.JoinChannelRequest(channel="@biio_of_ronin"))
             botme = await ydk.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
@@ -1801,11 +1801,11 @@ async def get_users(event):
 async def ping(e):
     if e.sender_id in SMEX_USERS:
         start = datetime.now()
-        text = "𝙁𝙎 𝙎𝙋𝘼𝙈 𝙊𝙋!"
+        text = "🇷 🇴 🇳 🇮 🇳  𝙎𝙋𝘼𝙈 𝙊𝙋!"
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"𝔽𝕀ℕ𝔸𝕃 𝕊𝕋ℝ𝕀𝕂𝔼 𝕆ℙ 🥵🔥!\n`{ms}` ms{ALIVE_NAME} ")
+        await event.edit(f"𝔽𝕀ℕ𝔸𝕃 𝕊𝕋ℝ𝕀𝕂𝔼 𝕆ℙ of ronin 🥵🔥!\n`{ms}` ms{ALIVE_NAME} ")
 
 
 
